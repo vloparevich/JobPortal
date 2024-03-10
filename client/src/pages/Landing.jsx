@@ -14,7 +14,7 @@ function Landing() {
             job <span>tracking</span> app
           </h1>
           <p>
-            ipster Ipsum is a Lorem ipsum generator that can give mocks a blue
+            Ipster Ipsum is a Lorem ipsum generator that can give mocks a blue
             collar touch. Lorem ipsum is placeholder text used in design when
             creating content. It is a display of letters to be viewed as a
             sample with given graphical elements in a file.

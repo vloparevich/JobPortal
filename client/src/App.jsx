@@ -13,6 +13,10 @@ import {
   Admin,
 } from "./pages";
 
+import { action as registerAction } from "./pages/Register";
+import { action as loginAction } from "./pages/Login";
+import { loader as dashboardLoader } from "./pages/DashboardLayout";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,11 +27,16 @@ const router = createBrowserRouter([
         index: true,
         element: <Landing />,
       },
-      { path: "login", element: <Login /> },
-      { path: "register", element: <Register /> },
+      { path: "login", element: <Login />, action: loginAction },
+      {
+        path: "register",
+        element: <Register />,
+        action: registerAction,
+      },
       {
         path: "dashboard",
         element: <DashboardLayout />,
+        loader: dashboardLoader,
         children: [
           { index: true, element: <AddJobs /> },
           { path: "stats", element: <Stats /> },

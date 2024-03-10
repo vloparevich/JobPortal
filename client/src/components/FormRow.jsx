@@ -1,4 +1,4 @@
-function FormRow({ type, name, id, labelText, defaultValue }) {
+const FormRow = ({ type, name, id, labelText, defaultValue }) => {
   return (
     <div className="form-row">
       <label className="form-label" htmlFor={name}>
@@ -14,6 +14,6 @@ function FormRow({ type, name, id, labelText, defaultValue }) {
       />
     </div>
   );
-}
+};
 
 export default FormRow;
